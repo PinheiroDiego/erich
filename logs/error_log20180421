@@ -1,0 +1,11 @@
+[Sat Apr 21 07:36:44 2018] [error] [client 31.13.113.193] File does not exist: /home/storage/d/94/04/agenciabridge1/public_html/favicon.ico, referer: http://agenciabridge.com.br/
+[Sat Apr 21 07:36:47 2018] [error] [client 31.13.113.196] mod_mime_magic: invalid type 0 in mconvert()., referer: http://agenciabridge.com.br/css/elegant-icons.min.css
+[Sat Apr 21 07:36:47 2018] [error] [client 31.13.113.195] mod_mime_magic: invalid type 0 in mconvert()., referer: http://agenciabridge.com.br/css/line-icons.min.css
+[Sat Apr 21 07:36:53 2018] [error] [client 66.220.151.212] File does not exist: /home/storage/d/94/04/agenciabridge1/public_html/favicon.ico, referer: http://agenciabridge.com.br/
+[Sat Apr 21 07:36:56 2018] [error] [client 66.220.151.210] mod_mime_magic: invalid type 0 in mconvert()., referer: http://agenciabridge.com.br/css/elegant-icons.min.css
+[Sat Apr 21 07:36:56 2018] [error] [client 66.220.151.212] mod_mime_magic: invalid type 0 in mconvert()., referer: http://agenciabridge.com.br/css/line-icons.min.css
+[Sat Apr 21 12:23:42 2018] [error] [client 201.15.143.156] File does not exist: /home/storage/d/94/04/agenciabridge1/public_html/favicon.ico
+[Sat Apr 21 12:43:01 2018] [error] [client 201.15.143.156] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/var/lib/php-cgi/session/sess_ii245j263605u0bf11guhcn8f2, O_RDWR) failed: No such file or directory (2) in /home/storage/d/94/04/agenciabridge1/public_html/contato/index.php on line 1, referer: http://agenciabridge.com.br/home/
+[Sat Apr 21 12:43:01 2018] [error] [client 201.15.143.156] PHP Warning:  Unknown: open(/var/lib/php-cgi/session/sess_ii245j263605u0bf11guhcn8f2, O_RDWR) failed: No such file or directory (2) in Unknown on line 0, referer: http://agenciabridge.com.br/home/
+[Sat Apr 21 12:43:01 2018] [error] [client 201.15.143.156] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/lib/php-cgi/session) in Unknown on line 0, referer: http://agenciabridge.com.br/home/
+[Sat Apr 21 12:43:03 2018] [error] [client 201.15.143.156] mod_mime_magic: invalid type 0 in mconvert()., referer: http://agenciabridge.com.br/contato/

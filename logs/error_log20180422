@@ -1,0 +1,6 @@
+[Sun Apr 22 10:40:44 2018] [error] [client 201.15.143.156] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: open(/var/lib/php-cgi/session/sess_i4k97nmmo6294dgognuqb52ap7, O_RDWR) failed: No such file or directory (2) in /home/storage/d/94/04/agenciabridge1/public_html/contato/index.php on line 1, referer: http://m.facebook.com
+[Sun Apr 22 10:40:44 2018] [error] [client 201.15.143.156] PHP Warning:  Unknown: open(/var/lib/php-cgi/session/sess_i4k97nmmo6294dgognuqb52ap7, O_RDWR) failed: No such file or directory (2) in Unknown on line 0, referer: http://m.facebook.com
+[Sun Apr 22 10:40:44 2018] [error] [client 201.15.143.156] PHP Warning:  Unknown: Failed to write session data (files). Please verify that the current setting of session.save_path is correct (/var/lib/php-cgi/session) in Unknown on line 0, referer: http://m.facebook.com
+[Sun Apr 22 20:26:07 2018] [error] [client 201.15.143.156] mod_mime_magic: invalid type 0 in mconvert()., referer: http://agenciabridge.com.br/home/
+[Sun Apr 22 20:26:08 2018] [error] [client 201.15.143.156] mod_mime_magic: invalid type 0 in mconvert()., referer: http://agenciabridge.com.br/home/
+[Sun Apr 22 20:26:09 2018] [error] [client 201.15.143.156] File does not exist: /home/storage/d/94/04/agenciabridge1/public_html/favicon.ico
