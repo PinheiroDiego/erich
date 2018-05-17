@@ -1,0 +1,119 @@
+.container {
+  width: 96%; /*Nossa página hoje tem o tamanho fixo em 940px e é centralizada, aqui removemos esse tamanho absoluto e colocamos um tamanho 
+  que ocupe quase que a tela toda */
+}
+
+/* as tags a seguir ajustam os elementos do topo da página. Vamos centralizar o logotipo na página, esconder as informações (secundárias) 
+sobre a sacola e ajustar o menu para ficar abaixo do logo e não mais posicionado à direita. */
+header h1 {
+  text-align: center;
+}
+header h1 img {
+  max-width: 50%;
+}
+.sacola {
+  display: none; 
+}
+.menu-opcoes {
+  position: static;
+  text-align: center;
+}
+
+/*Lembre-se que, anteriormente, nosso menu estava com position:absolute para ficar a direita do logo. Agora, queremos deixá-lo fluir abaixo 
+do logo; bastou restaurar o position:static. */
+
+/*Ajustamos a posição do menu do topo e, automaticamente, os links se posicionaram formando duas linhas. 
+Mas repare como estão próximos uns dos outros. Será que o nosso usuário consegue clicar neles usando seu celular? 
+Vamos aumentar o espaço entre eles: */
+
+.menu-opcoes ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+/*Ajuste a seção de busca, o menu da esquerda e a imagem de destaque. Como eles são muito grandes, em mobile, é melhor renderizarmos um 
+em cima do outro sem quebrar em colunas. Vamos ocupar 100% da tela com o menu e a busca. A imagem de destaque deverá ser 
+redimensionada para ocupar 100% da tela e não estourar o tamanho.*/
+
+.busca, 
+.menu-departamentos, 
+.destaque img {
+  margin-right: 0;
+  width: 100%;
+}
+
+/*Por ora, os paineis estão com tamanhos absolutos ocupando metade da tela e mostrando 6 elementos, com 3 por linha. Vamos manter o painel 
+com 3 elementos por linha, mas vamos fazer os dois painéis encaixarem um em cima do outro. Para isso, basta tirarmos a restrição 
+de largura do painel para ele ocupar a tela toda. */
+
+.painel {
+  width: auto;
+}
+
+/* Com relação aos produtos nos painéis. Vamos precisar redimensioná-los para encaixar 3 em cada linha. Uma boa maneira é colocar cada elemento com 30% do painel, totalizando 90%, e deixando espaço para as margens.
+
+Já a imagem interna de cada produto deverá ocupar 100% do seu quadrado (o <li> que ajustamos), senão as imagens vão estourar o 
+layout em certos tamanhos. */
+
+.painel li {
+  width: 30%;
+}
+.painel img {
+  width: 100%;
+}
+
+/* começa aqui */
+
+/* Nosso layout anterior tem dois comportamentos: um layout fixo em 940px otimizado para Desktops e outro construído para telas 
+pequenas, mas que é aplicado para qualquer resolução abaixo de 939px.
+Repare que, em resoluções altas (mas menores que 940px), nosso design mobile não fica tão bonito 
+(embora continue funcional!). Podemos usar mais media queries para ajustar outros detalhes do layout conforme o tamanho da tela 
+varia entre 320px e 939px.
+
+Por exemplo, podemos usar 2 colunas no nosso menu quando chegarmos em 480px (um iPhone em paisagem): */
+
+@media (min-width: 480px) {
+  header h1 {
+    margin: 5px 0;
+  }
+  .menu-departamentos {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-departamentos nav > ul {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+}
+
+/*  Em telas um pouco maiores, como tablets (um iPad tem 768px por exemplo), podemos querer fazer outros ajustes com uma media query:*/
+
+@media (min-width: 720px) {
+
+  header h1 { 
+    text-align: left;
+  }
+  
+  .menu-opcoes {
+    position: absolute;
+  }
+  .sacola {
+    display: block;
+  }
+  .painel li {
+    width: 15%;
+  }
+  .busca, .menu-departamentos {
+    margin-right: 1%;
+    width: 30%;
+  }
+  .menu-departamentos nav > ul {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+  }
+  .destaque img {
+    width: 69%;
+  }
+}

@@ -1,0 +1,137 @@
+.logo {
+  max-width:114px;
+  max-height:62px;
+  width: auto;
+  height: auto;
+}
+
+.marca {
+  max-width:80px;
+  max-height:45px;
+  width: auto;
+  height: auto;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.glyphicon:before {
+  color: white; 
+}
+
+.principal {
+  padding-top: 100px;
+}
+
+.sobrebg{
+    background: url(../img/background_site.jpg);
+}
+
+.sloganprincipal {
+    display: block;
+    font: 17px effraregular;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.slogantitulo{
+    text-align: center;
+  }
+
+.video-2 h1{
+    display: block;
+    font: 17px effraregular;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.conheca p{
+    font: 14px/20px effraregular;
+    color: #633a48;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    height: 50px;
+
+}
+
+.video-2 a{
+     display: block;
+    margin: 0 auto;
+
+    width: 22px;
+    height: 39px;
+    background: url(../img/arrow.png) center top no-repeat;
+    text-indent: -9999px;
+  }
+
+
+.verde {
+    background: #01b9b2;
+    letter-spacing: 2px;
+        font-family: amarelinha ,sans-serif;
+}
+
+.cinza{
+  background: #a883b4;
+  letter-spacing: 2px;
+}
+
+.rosa{
+  background: #eca93e;
+  letter-spacing: 2px;
+}
+
+.vermelho{
+  background: #d00537;
+  letter-spacing: 2px;
+}
+
+.azul{
+  background: #dc6782;
+  letter-spacing: 2px;
+}
+
+.amarelo{
+  background: #8d3024;
+  letter-spacing: 2px;
+
+}
+
+
+.nav-justified a {
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a, p, span, strong, img, h1, h2, h3, h4, h5, h6, div, ul, li, body, section, :after, :before {
+    transition: all 0.25s linear;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition-delay: initial;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+.nav>li>a:hover {
+  background-color: rgba(0,0,0,0);
+}
+
+footer{
+
+      background-color: #3F3F3F;
+      color: white;
+}
+
+
